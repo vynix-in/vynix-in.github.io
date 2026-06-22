@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#008448" />
+<link rel="icon" href="https://vynix.in/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="https://vynix.in/favicon.svg" />
+<link rel="apple-touch-icon" href="https://vynix.in/apple-touch-icon.png" />
+<title>Using the Vynix MCP Server With Your AI Agent | Vynix</title>
+<meta name="description" content="Connect Vynix annotations to an AI agent through MCP, with the clicked element, screenshot, console logs, network context, and diagnosis." />
+<meta name="keywords" content="mcp, agent, ai, vynix, bug reporting, ai coding agents" />
+<link rel="canonical" href="https://vynix.in/resources/blog/using-the-vynix-mcp-server-with-your-ai-agent/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Using the Vynix MCP Server With Your AI Agent | Vynix" />
+<meta property="og:description" content="Connect Vynix annotations to an AI agent through MCP, with the clicked element, screenshot, console logs, network context, and diagnosis." />
+<meta property="og:url" content="https://vynix.in/resources/blog/using-the-vynix-mcp-server-with-your-ai-agent/" />
+<meta property="og:image" content="https://vynix-in.github.io/assets/og/using-the-vynix-mcp-server-with-your-ai-agent.png" />
+<meta property="og:site_name" content="Vynix" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@usevynix" />
+<meta name="twitter:title" content="Using the Vynix MCP Server With Your AI Agent | Vynix" />
+<meta name="twitter:description" content="Connect Vynix annotations to an AI agent through MCP, with the clicked element, screenshot, console logs, network context, and diagnosis." />
+<meta name="twitter:image" content="https://vynix-in.github.io/assets/og/using-the-vynix-mcp-server-with-your-ai-agent.png" />
+<meta property="article:published_time" content="2026-06-22T03:17:26.988Z" />
+<meta property="article:modified_time" content="2026-06-22T03:17:26.988Z" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Using the Vynix MCP Server With Your AI Agent",
+  "description": "Connect Vynix annotations to an AI agent through MCP, with the clicked element, screenshot, console logs, network context, and diagnosis.",
+  "image": [
+    "https://vynix-in.github.io/assets/og/using-the-vynix-mcp-server-with-your-ai-agent.png"
+  ],
+  "datePublished": "2026-06-22T03:17:26.988Z",
+  "dateModified": "2026-06-22T03:17:26.988Z",
+  "author": {
+    "@type": "Organization",
+    "name": "The Vynix Team",
+    "url": "https://vynix.in"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vynix",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vynix.in/icon-512.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vynix-in.github.io/blog/using-the-vynix-mcp-server-with-your-ai-agent/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vynix.in"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vynix-in.github.io/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Using the Vynix MCP Server With Your AI Agent",
+      "item": "https://vynix-in.github.io/blog/using-the-vynix-mcp-server-with-your-ai-agent/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does the Vynix MCP server add compared with a normal bug report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It lets an AI agent read structured context from a Vynix annotation, including the clicked element, screenshot, console context, network context, and Vynix's AI diagnosis. That gives the agent concrete evidence instead of only a written description."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Vynix open a GitHub issue for an agent to work on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. From a Vynix annotation, you can copy a ready-to-build prompt or open a GitHub issue and assign it to a coding agent. The issue gives the task a trackable place in your normal development workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should the agent trust the Vynix diagnosis automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The diagnosis is useful as a starting point, but the agent should confirm it against the captured console and network context and then against the codebase. A developer should still review the final change."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Hand off through MCP",
+  "description": "Connect Vynix annotations to an AI agent through MCP, with the clicked element, screenshot, console logs, network context, and diagnosis.",
+  "thumbnailUrl": [
+    "https://vynix-in.github.io/assets/shots/shot-mcp.png"
+  ],
+  "contentUrl": "https://vynix.in/marketing/mcp_handoff.mp4",
+  "uploadDate": "2026-06-22T03:17:26.988Z"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vynix",
+  "url": "https://vynix.in",
+  "logo": "https://vynix.in/icon-512.png",
+  "sameAs": [
+    "https://github.com/vynix-in",
+    "https://twitter.com/usevynix"
+  ]
+}
+</script>
+<style>
+:root{--green:#008448;--green-2:#06a463;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--bg:#ffffff;--soft:#f8fafc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+img,video{max-width:100%;height:auto;border-radius:12px}
+.container{max-width:880px;margin:0 auto;padding:0 20px}
+.site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);z-index:10}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink)}
+.brand .mark{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--green),var(--green-2));position:relative;display:inline-block}
+.brand .mark::after{content:"";position:absolute;inset:7px 8px;border-left:3px solid #fff;border-bottom:3px solid #fff;transform:rotate(-45deg)}
+nav.main a{color:var(--muted);font-size:.95rem;margin-left:18px;font-weight:500}
+nav.main a:hover{color:var(--green)}
+.cta{display:inline-block;background:var(--green);color:#fff!important;padding:9px 16px;border-radius:9px;font-weight:600;text-decoration:none!important}
+.cta:hover{background:var(--green-2)}
+.breadcrumbs{font-size:.85rem;color:var(--muted);padding:16px 0}
+.breadcrumbs a{color:var(--muted)}
+article{padding:8px 0 48px}
+article h1{font-size:2.3rem;line-height:1.15;margin:.2em 0 .3em}
+article h2{font-size:1.5rem;margin:1.6em 0 .5em}
+article h3{font-size:1.2rem;margin:1.4em 0 .4em}
+.lead{font-size:1.2rem;color:var(--muted)}
+.meta-row{display:flex;gap:14px;align-items:center;color:var(--muted);font-size:.9rem;margin:10px 0 22px;flex-wrap:wrap}
+.hero{margin:18px 0 26px;border:1px solid var(--line)}
+figure{margin:24px 0}
+figure img,figure video{border:1px solid var(--line);width:100%}
+figcaption{color:var(--muted);font-size:.85rem;margin-top:8px;text-align:center}
+.ill-hero{margin:18px 0 26px}
+.ill-hero svg{border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:.96rem}
+th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-weight:600}
+td.yes{color:var(--green);font-weight:600}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:24px 0}
+.toc strong{display:block;margin-bottom:8px;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.toc ol{margin:0;padding-left:20px}
+.faq h3{font-size:1.08rem;margin-top:1.2em}
+.callout{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:18px 20px;margin:26px 0}
+.callout a.cta{margin-top:8px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:24px 0}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:box-shadow .15s}
+.card:hover{box-shadow:0 8px 24px rgba(15,23,42,.08)}
+.card img{border-radius:0;display:block;aspect-ratio:16/9;object-fit:cover;width:100%}
+.card .body{padding:14px 16px}
+.card h3{margin:.2em 0;font-size:1.05rem}
+.card p{color:var(--muted);font-size:.92rem;margin:.3em 0 0}
+.tag{display:inline-block;font-size:.72rem;color:var(--green);background:#ecfdf5;border:1px solid #bbf7d0;border-radius:999px;padding:2px 9px;margin-right:6px}
+.site-footer{border-top:1px solid var(--line);background:var(--soft);margin-top:40px}
+.site-footer .container{padding:32px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;color:var(--muted);font-size:.9rem}
+.site-footer a{color:var(--muted)}
+@media(max-width:640px){article h1{font-size:1.8rem}nav.main a{margin-left:12px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container">
+  <a class="brand" href="https://vynix.in"><span class="mark"></span> Vynix</a>
+  <nav class="main">
+    <a href="https://vynix.in">Product</a><a href="/blog/">Blog</a><a href="/compare/">Compare</a><a href="/best/">Guides</a><a href="/for/">Use cases</a><a href="/kb/">Help</a>
+    <a class="cta" href="https://vynix.in">Try free</a>
+  </nav>
+</div></header>
+<main class="container">
+<div class="breadcrumbs container"><a href="https://vynix.in">Home</a> / <a href="/blog/">Blog</a> / <span>Using the Vynix MCP Server With Your AI Agent</span></div>
+<article>
+  <h1>Using the Vynix MCP Server With Your AI Agent</h1>
+  <div class="meta-row">
+    <span>By the Vynix Team</span>
+    <span>&middot;</span>
+    <time datetime="2026-06-22T03:17:26.988Z">22 June 2026</time>
+    <span>&middot;</span>
+    <span>7 min read</span>
+  </div>
+  <p class="lead">A good AI coding agent is only as useful as the context you give it. Vynix helps turn a vague website bug into a specific, buildable task by capturing the broken element, a screenshot, browser console output, network context, and an AI diagnosis.</p>
+  <figure class="ill-hero"><svg class="vx-ill" viewBox="0 0 640 360" role="img" aria-label="Clicking an element and leaving a note with Vynix" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto;aspect-ratio:16 / 9;display:block">
+  <defs>
+    <linearGradient id="vxcap-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6fdfa"/><stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="vxcap-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#008448"/><stop offset="1" stop-color="#15c47d"/>
+    </linearGradient>
+    <filter id="vxcap-s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="638" height="358" rx="22" fill="url(#vxcap-bg)" stroke="#d1fae5"/>
+  <style>
+    .vxcap-pulse{transform-box:fill-box;transform-origin:center;animation:vxcap-pulse 2.6s ease-in-out infinite}
+    @keyframes vxcap-pulse{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:1;transform:scale(1.06)}}
+    .vxcap-dash{stroke-dasharray:8 10;animation:vxcap-dash 1.4s linear infinite}
+    @keyframes vxcap-dash{to{stroke-dashoffset:-36}}
+    .vxcap-float{animation:vxcap-float 4s ease-in-out infinite}
+    @keyframes vxcap-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    .vxcap-in{opacity:0;animation:vxcap-in 6s ease-in-out infinite}
+    @keyframes vxcap-in{0%,8%{opacity:0;transform:translateY(8px)}18%,72%{opacity:1;transform:translateY(0)}88%,100%{opacity:0}}
+  </style>
+  <rect x="48" y="56" width="544" height="248" rx="14" fill="#ffffff" stroke="#e2e8f0" filter="url(#vxcap-s)"/>
+     <rect x="48" y="56" width="544" height="34" rx="14" fill="#f1f5f9"/>
+     <circle cx="70" cy="73" r="5" fill="#f87171"/><circle cx="88" cy="73" r="5" fill="#fbbf24"/><circle cx="106" cy="73" r="5" fill="#34d399"/>
+     <rect x="78" y="120" width="220" height="14" rx="7" fill="#e2e8f0"/>
+     <rect x="78" y="148" width="320" height="14" rx="7" fill="#eef2f7"/>
+     <rect x="78" y="200" width="150" height="40" rx="10" fill="url(#vxcap-g)"/>
+     <text x="153" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#fff">Buy now</text>
+     <rect x="76" y="198" width="154" height="44" rx="12" fill="none" stroke="#008448" stroke-width="2.5" class="vxcap-pulse"/>
+     <g class="vxcap-in">
+       <rect x="300" y="190" width="252" height="86" rx="12" fill="#052e1b" filter="url(#vxcap-s)"/>
+       <circle cx="320" cy="210" r="7" fill="#15c47d"/>
+       <rect x="336" y="204" width="120" height="9" rx="4" fill="#34d399"/>
+       <rect x="312" y="228" width="220" height="8" rx="4" fill="#1e5b43"/>
+       <rect x="312" y="246" width="180" height="8" rx="4" fill="#1e5b43"/>
+     </g>
+     <g>
+       <path d="M150 210 q -2 -34 22 -40" fill="none" stroke="#008448" stroke-width="2" stroke-dasharray="4 6"/>
+       <path class="vxcap-float" d="M470 120 l 14 26 -10 -2 -2 12 z" fill="#0f172a"/>
+     </g>
+</svg></figure><figure class="hero"><img src="/assets/shots/shot-mcp.png" alt="An AI agent reading Vynix feedback and fixing the code over MCP" width="1080" height="1350" /><figcaption>An AI agent reading Vynix feedback and fixing the code over MCP</figcaption></figure>
+  <div class="toc"><strong>On this page</strong><ol><li><a href="#s1-why-mcp-matters-for-website-bu">Why MCP matters for website bugs</a></li><li><a href="#s2-what-vynix-sends-to-the-agent">What Vynix sends to the agent</a></li><li><a href="#s3-set-up-the-connection-in-a-pra">Set up the connection in a practical way</a></li><li><a href="#s4-a-realistic-workflow-from-anno">A realistic workflow from annotation to patch</a></li><li><a href="#s5-how-to-prompt-the-agent-once-v">How to prompt the agent once Vynix context is available</a></li><li><a href="#s6-keep-humans-in-the-loop-where-">Keep humans in the loop where it counts</a></li><li><a href="#s7-common-mistakes-to-avoid">Common mistakes to avoid</a></li></ol></div>
+  <section id="s1-why-mcp-matters-for-website-bu"><h2>Why MCP matters for website bugs</h2><p>The Model Context Protocol, usually called MCP, gives AI agents a standard way to read context from external tools. Instead of copying notes from a bug report, pasting screenshots into chat, and hoping the agent asks the right follow-up questions, you can expose structured context through an MCP server. For website work, that context is often the difference between a useful patch and a confident guess.</p><p>Website bugs are rarely described well on the first try. A report like "the checkout button is broken" leaves out the selected element, route, browser state, console errors, failed API calls, and visible UI state. Vynix is built for that gap. Someone clicks the exact thing that is wrong, and Vynix records the page evidence around it. When your AI agent can read that evidence through the Vynix MCP server, it can start from the same facts a developer would want before opening the codebase.</p><ul><li>The agent can see which UI element was selected, rather than guessing from a written description.</li><li>The screenshot gives visual context, including layout, text, and nearby components.</li><li>Console and network context can point to client-side errors, failed requests, status codes, or missing data.</li><li>The Vynix diagnosis can help the agent form an initial theory, while still checking the code before making changes.</li></ul></section>
+<section id="s2-what-vynix-sends-to-the-agent"><h2>What Vynix sends to the agent</h2><p>Vynix starts on the website, not in the issue tracker. You drop a lightweight widget on the site, reproduce the problem, click the affected area, and submit the annotation. That click gives the report an anchor. Instead of a generic bug title, the agent gets a focused record tied to a real DOM element and a real page state.</p><p>The useful part is not any single artifact. It is the bundle. A screenshot may show that a modal is hidden behind a header, but the console may show a JavaScript exception thrown during rendering. A network request may show that the UI is fine, but the data endpoint returned a 500. The clicked element may identify the component that owns the interaction. When these pieces arrive together, the agent has a much better starting point.</p><ul><li>Element context: the selected part of the page that the reporter clicked.</li><li>Screenshot: the visible state of the page at the time of the report.</li><li>Console context: browser errors, warnings, and logs captured around the issue.</li><li>Network context: relevant request and response information captured from the page session.</li><li>AI diagnosis: Vynix's likely root cause summary, meant to guide investigation rather than replace it.</li><li>Task output: a ready-to-build prompt or a GitHub issue that can be assigned to a coding agent.</li></ul><figure><img src="/assets/shots/shot-mcp.png" alt="An AI agent reading Vynix feedback and fixing the code over MCP" loading="lazy" width="1080" height="1350" /><figcaption>An AI agent reading Vynix feedback and fixing the code over MCP</figcaption></figure></section>
+<section id="s3-set-up-the-connection-in-a-pra"><h2>Set up the connection in a practical way</h2><p>The exact setup depends on the AI agent and MCP client you use, so keep the configuration tied to your team's current tooling. In most setups, you add the Vynix MCP server as a context source, provide the required access details from Vynix, and restart or refresh the agent so it can list the available tools. Do not paste long-lived secrets into shared prompts or commit MCP configuration with private tokens into your repository.</p><p>Before giving the agent write access to your codebase, test the read path. Create a small Vynix annotation on a non-critical page, then ask the agent to summarize what Vynix captured. The agent should be able to identify the clicked area, describe the screenshot, mention any relevant console or network context, and restate the diagnosis. If it cannot do that, fix the MCP connection before asking it to edit code.</p><ul><li>Start with read-only review of Vynix context, then move to code changes once the agent is pulling the right data.</li><li>Use a test annotation so you know what the agent should find.</li><li>Keep authentication details in the place your MCP client expects, not in chat messages.</li><li>Check that the agent can reference a specific annotation or issue before asking for a patch.</li><li>Prefer small, scoped tasks at first, such as fixing one broken interaction or one failed route.</li></ul></section>
+<section id="s4-a-realistic-workflow-from-anno"><h2>A realistic workflow from annotation to patch</h2><p>Imagine a user reports that the "Apply discount" button on a checkout page appears to do nothing. Without Vynix, the task might become a Slack thread with a screenshot, a browser name, and a few guesses. With Vynix, the reporter opens the widget, clicks the button, and submits the annotation while the problem is still on screen.</p><p>The annotation might include a screenshot showing the checkout form, the clicked button, a console error such as a failed property read, and a network request returning a validation response the UI never renders. Vynix also adds an AI diagnosis of the likely root cause. From there, you can copy a ready-to-build prompt or open a GitHub issue and assign it to a coding agent.</p><p>When the agent reads the Vynix context through MCP, your prompt can be short and direct: "Use the Vynix annotation linked to this issue. Find the component responsible for the clicked discount button, confirm the root cause against the console and network context, and propose the smallest safe fix." That is better than pasting a long bug story because the agent can inspect structured evidence instead of relying only on your summary.</p></section>
+<section id="s5-how-to-prompt-the-agent-once-v"><h2>How to prompt the agent once Vynix context is available</h2><p>Even with rich context, the prompt still matters. The agent should not blindly implement the first theory it sees. Treat the Vynix diagnosis as a lead. Ask the agent to compare it with the code, explain what it found, and then make the smallest change that addresses the observed behavior.</p><p>Good prompts are specific about the desired output. If you want a patch, say so. If you want an investigation first, say that. If the issue touches payment, authentication, permissions, or customer data, ask for a plan before edits. The goal is to make the agent use Vynix as evidence, then use the repository as the source of truth.</p><ul><li>For investigation: "Read the Vynix annotation, summarize the selected element, screenshot, console context, and network context, then list the most likely files to inspect."</li><li>For a fix: "Use the Vynix context to reproduce the likely failure path in code, make the smallest safe change, and include a brief explanation of why it fixes the reported behavior."</li><li>For tests: "Based on the Vynix annotation, add or update a test that would fail before this fix and pass after it."</li><li>For review: "Compare the proposed change with the Vynix diagnosis and call out any assumptions that are not proven by the captured context."</li></ul></section>
+<section id="s6-keep-humans-in-the-loop-where-"><h2>Keep humans in the loop where it counts</h2><p>Vynix can give an AI agent the context that is usually missing from a website bug report, but it should not remove review. The agent may correctly identify a client-side error and still choose a fix that does not match your architecture. It may see a failed API request and assume the frontend is wrong when the backend contract changed. Captured context narrows the search, but code review and product judgment still matter.</p><p>A useful team pattern is to let the agent draft the first patch, then require a developer to review the reasoning against the Vynix evidence. Did the change address the clicked element? Did it explain the console error or network response? Did it add a test or at least describe how the fix was verified? Those questions keep the workflow grounded.</p><p>This is also where GitHub issues help. A Vynix-generated issue gives the agent a place to work and gives the team a record to review. The issue can carry the annotation context, the agent can submit a proposed change, and a developer can decide whether the patch is right.</p></section>
+<section id="s7-common-mistakes-to-avoid"><h2>Common mistakes to avoid</h2><p>The most common mistake is treating the MCP connection as magic. If the annotation is vague, stale, or created on the wrong page state, the agent will inherit that confusion. Encourage reporters to click the actual broken element while the bug is visible, not after navigating away or refreshing into a different state.</p><p>Another mistake is asking the agent for a broad rewrite when the Vynix report points to a narrow failure. If the captured network context shows one failed request, start there. If the clicked element maps to a single component, inspect that component before changing shared UI primitives. Small fixes are easier to review and easier to connect back to the original annotation.</p><ul><li>Do not ask the agent to fix "the page" when Vynix captured a specific button, form, or component.</li><li>Do not ignore console and network context just because the screenshot looks obvious.</li><li>Do not skip verification. Ask how the fix addresses the captured evidence.</li><li>Do not expose private tokens or sensitive data in prompts, repository files, or public issues.</li><li>Do not let the AI diagnosis override what the code and runtime evidence show.</li></ul></section>
+  <figure><video controls preload="none" poster="/assets/shots/shot-mcp.png" width="1080" height="1350"><source src="https://vynix.in/marketing/mcp_handoff.mp4" type="video/mp4" /></video><figcaption>Hand off through MCP: see Vynix in action</figcaption></figure>
+  <div class="callout"><strong>Key takeaways</strong><ul><li>Vynix turns a website bug into agent-ready context by capturing the selected element, screenshot, console output, network context, and a likely root cause diagnosis.</li><li>The Vynix MCP server helps an AI agent access that context directly, so prompts can be shorter and fixes can be tied to real page evidence.</li><li>Use the agent for focused investigation and small patches, but keep human review in place for architecture, security, and product judgment.</li></ul></div>
+  <section class="faq"><h2>Frequently asked questions</h2><h3>What does the Vynix MCP server add compared with a normal bug report?</h3><p>It lets an AI agent read structured context from a Vynix annotation, including the clicked element, screenshot, console context, network context, and Vynix's AI diagnosis. That gives the agent concrete evidence instead of only a written description.</p><h3>Can Vynix open a GitHub issue for an agent to work on?</h3><p>Yes. From a Vynix annotation, you can copy a ready-to-build prompt or open a GitHub issue and assign it to a coding agent. The issue gives the task a trackable place in your normal development workflow.</p><h3>Should the agent trust the Vynix diagnosis automatically?</h3><p>No. The diagnosis is useful as a starting point, but the agent should confirm it against the captured console and network context and then against the codebase. A developer should still review the final change.</p></section>
+  <div class="callout">
+    <strong>Try Vynix on your own site</strong>
+    <p>Install the widget with one script tag, point at a bug, and hand the fix to your coding agent.</p>
+    <a class="cta" href="https://vynix.in">Get started free</a>
+  </div>
+  <h2>Keep reading</h2><ul><li><a href="/blog/how-vynix-cuts-the-cost-of-running-ai-coding-agents/">How Vynix cuts the cost of running AI coding agents</a></li><li><a href="/compare/jam-vs-vynix/">Jam vs Vynix</a></li><li><a href="/compare/marker-io-vs-vynix/">Marker.io vs Vynix</a></li></ul>
+</article>
+</main>
+<footer class="site-footer"><div class="container">
+  <div>&copy; 2026 Vynix &middot; <a href="https://vynix.in">vynix.in</a></div>
+  <div>
+    <a href="/blog/">Blog</a> &middot;
+    <a href="/compare/">Compare</a> &middot;
+    <a href="/best/">Guides</a> &middot;
+    <a href="/glossary/">Glossary</a> &middot;
+    <a href="/kb/">Help</a> &middot;
+    <a href="/badge/">Badge</a> &middot;
+    <a href="https://github.com/vynix-in">GitHub</a> &middot;
+    <a href="https://vynix.in/privacy">Privacy</a>
+  </div>
+</div></footer>
+</body>
+</html>
