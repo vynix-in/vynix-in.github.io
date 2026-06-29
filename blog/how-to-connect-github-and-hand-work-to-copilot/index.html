@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#008448" />
+<link rel="icon" href="https://vynix.in/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="https://vynix.in/favicon.svg" />
+<link rel="apple-touch-icon" href="https://vynix.in/apple-touch-icon.png" />
+<title>How to connect GitHub and hand work to Copilot | Vynix</title>
+<meta name="description" content="Turn website bugs into GitHub issues Copilot can act on, with screenshots, element context, console logs, and network clues from Vynix." />
+<meta name="keywords" content="github, handoff, agent, vynix, bug reporting, ai coding agents" />
+<link rel="canonical" href="https://www.vynix.in/resources/blog/how-to-connect-github-and-hand-work-to-copilot/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to connect GitHub and hand work to Copilot | Vynix" />
+<meta property="og:description" content="Turn website bugs into GitHub issues Copilot can act on, with screenshots, element context, console logs, and network clues from Vynix." />
+<meta property="og:url" content="https://www.vynix.in/resources/blog/how-to-connect-github-and-hand-work-to-copilot/" />
+<meta property="og:image" content="https://vynix-in.github.io/assets/og/how-to-connect-github-and-hand-work-to-copilot.png" />
+<meta property="og:site_name" content="Vynix" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@usevynix" />
+<meta name="twitter:title" content="How to connect GitHub and hand work to Copilot | Vynix" />
+<meta name="twitter:description" content="Turn website bugs into GitHub issues Copilot can act on, with screenshots, element context, console logs, and network clues from Vynix." />
+<meta name="twitter:image" content="https://vynix-in.github.io/assets/og/how-to-connect-github-and-hand-work-to-copilot.png" />
+<meta property="article:published_time" content="2026-06-29T03:38:27.826Z" />
+<meta property="article:modified_time" content="2026-06-29T03:38:27.826Z" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to connect GitHub and hand work to Copilot",
+  "description": "Turn website bugs into GitHub issues Copilot can act on, with screenshots, element context, console logs, and network clues from Vynix.",
+  "image": [
+    "https://vynix-in.github.io/assets/og/how-to-connect-github-and-hand-work-to-copilot.png"
+  ],
+  "datePublished": "2026-06-29T03:38:27.826Z",
+  "dateModified": "2026-06-29T03:38:27.826Z",
+  "author": {
+    "@type": "Organization",
+    "name": "The Vynix Team",
+    "url": "https://vynix.in"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vynix",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vynix.in/icon-512.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vynix-in.github.io/blog/how-to-connect-github-and-hand-work-to-copilot/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vynix.in"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vynix-in.github.io/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to connect GitHub and hand work to Copilot",
+      "item": "https://vynix-in.github.io/blog/how-to-connect-github-and-hand-work-to-copilot/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can Vynix automatically fix the bug in my repository?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vynix captures website context, provides an AI diagnosis of the likely root cause, and helps you create a GitHub issue or copy a ready-to-build prompt. The actual code change is handled through your development workflow, such as Copilot, another coding agent, or a developer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need GitHub Copilot coding agent to use this workflow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. If your GitHub setup supports assigning issues to Copilot, you can use that path. If not, you can still copy the Vynix prompt and use it with Copilot in an editor or another coding tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I add manually after Vynix captures the issue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add anything the browser cannot know: expected behavior, account role, feature flag state, business rule, test command, or release priority. Vynix captures the technical page context, but a short human note can make the task much clearer."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Hand off to GitHub",
+  "description": "Turn website bugs into GitHub issues Copilot can act on, with screenshots, element context, console logs, and network clues from Vynix.",
+  "thumbnailUrl": [
+    "https://vynix-in.github.io/assets/shots/shot-github.png"
+  ],
+  "contentUrl": "https://vynix.in/marketing/github_handoff.mp4",
+  "uploadDate": "2026-06-29T03:38:27.826Z"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vynix",
+  "url": "https://vynix.in",
+  "logo": "https://vynix.in/icon-512.png",
+  "sameAs": [
+    "https://github.com/vynix-in",
+    "https://twitter.com/usevynix"
+  ]
+}
+</script>
+<style>
+:root{--green:#008448;--green-2:#06a463;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--bg:#ffffff;--soft:#f8fafc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+img,video{max-width:100%;height:auto;border-radius:12px}
+.container{max-width:880px;margin:0 auto;padding:0 20px}
+.site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);z-index:10}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;color:var(--ink);font-size:1.15rem}
+.brand .vx-logo{display:block}
+.brand-name{letter-spacing:-.01em}
+.brand .mark{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--green),var(--green-2));position:relative;display:inline-block}
+.brand .mark::after{content:"";position:absolute;inset:7px 8px;border-left:3px solid #fff;border-bottom:3px solid #fff;transform:rotate(-45deg)}
+nav.main a{color:var(--muted);font-size:.95rem;margin-left:18px;font-weight:500}
+nav.main a:hover{color:var(--green)}
+.cta{display:inline-block;background:var(--green);color:#fff!important;padding:9px 16px;border-radius:9px;font-weight:600;text-decoration:none!important}
+.cta:hover{background:var(--green-2)}
+.breadcrumbs{font-size:.85rem;color:var(--muted);padding:16px 0}
+.breadcrumbs a{color:var(--muted)}
+article{padding:8px 0 48px}
+article h1{font-size:2.3rem;line-height:1.15;margin:.2em 0 .3em}
+article h2{font-size:1.5rem;margin:1.6em 0 .5em}
+article h3{font-size:1.2rem;margin:1.4em 0 .4em}
+.lead{font-size:1.2rem;color:var(--muted)}
+.meta-row{display:flex;gap:14px;align-items:center;color:var(--muted);font-size:.9rem;margin:10px 0 22px;flex-wrap:wrap}
+.hero{margin:18px 0 26px;border:1px solid var(--line)}
+figure{margin:24px 0}
+figure img,figure video{border:1px solid var(--line);width:100%}
+figcaption{color:var(--muted);font-size:.85rem;margin-top:8px;text-align:center}
+.ill-hero{margin:18px 0 26px}
+.ill-hero svg{border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:.96rem}
+th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-weight:600}
+td.yes{color:var(--green);font-weight:600}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:24px 0}
+.toc strong{display:block;margin-bottom:8px;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.toc ol{margin:0;padding-left:20px}
+.faq h3{font-size:1.08rem;margin-top:1.2em}
+.callout{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:18px 20px;margin:26px 0}
+.callout a.cta{margin-top:8px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:24px 0}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:box-shadow .15s}
+.card:hover{box-shadow:0 8px 24px rgba(15,23,42,.08)}
+.card img{border-radius:0;display:block;aspect-ratio:16/9;object-fit:cover;width:100%}
+.card .body{padding:14px 16px}
+.card h3{margin:.2em 0;font-size:1.05rem}
+.card p{color:var(--muted);font-size:.92rem;margin:.3em 0 0}
+.tag{display:inline-block;font-size:.72rem;color:var(--green);background:#ecfdf5;border:1px solid #bbf7d0;border-radius:999px;padding:2px 9px;margin-right:6px}
+.site-footer{border-top:1px solid var(--line);background:var(--soft);margin-top:40px}
+.site-footer .container{padding:32px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;color:var(--muted);font-size:.9rem}
+.site-footer a{color:var(--muted)}
+@media(max-width:640px){article h1{font-size:1.8rem}nav.main a{margin-left:12px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container">
+  <a class="brand" href="https://vynix.in"><svg class="vx-logo" viewBox="0 0 1024 1024" width="28" height="28" fill="none" aria-hidden="true"><g transform="translate(0,1024) scale(0.1,-0.1)" fill="#008448"><path d="M30 8675 c0 -2 600 -532 1333 -1177 732 -645 1878 -1653 2544 -2240 l1213 -1068 1087 958 c599 526 1744 1535 2546 2240 801 706 1457 1285 1457 1288 0 2 -17 -6 -37 -19 -21 -13 -1166 -713 -2546 -1555 l-2507 -1532 -2388 1458 c-1313 803 -2458 1502 -2544 1555 -87 53 -158 95 -158 92z M1745 8503 c17 -11 783 -489 1702 -1061 l1673 -1042 1702 1061 c937 584 1694 1059 1683 1057 -11 -3 -777 -249 -1703 -548 l-1682 -543 -1683 543 c-1829 590 -1735 561 -1692 533z M1087 6789 c3048 -4001 4027 -5284 4033 -5284 9 0 4169 5458 4165 5463 -2 2 -295 -252 -652 -565 -356 -313 -1288 -1130 -2071 -1816 -783 -687 -1429 -1250 -1436 -1253 -8 -3 -239 192 -547 463 -1857 1629 -3606 3160 -3618 3168 -8 4 49 -74 126 -176z"/></g></svg><span class="brand-name">Vynix</span></a>
+  <nav class="main">
+    <a href="https://vynix.in">Product</a><a href="/blog/">Blog</a><a href="/compare/">Compare</a><a href="/best/">Guides</a><a href="/for/">Use cases</a><a href="/kb/">Help</a>
+    <a class="cta" href="https://vynix.in">Try free</a>
+  </nav>
+</div></header>
+<main class="container">
+<div class="breadcrumbs container"><a href="https://vynix.in">Home</a> / <a href="/blog/">Blog</a> / <span>How to connect GitHub and hand work to Copilot</span></div>
+<article>
+  <h1>How to connect GitHub and hand work to Copilot</h1>
+  <div class="meta-row">
+    <span>By the Vynix Team</span>
+    <span>&middot;</span>
+    <time datetime="2026-06-29T03:38:27.826Z">29 June 2026</time>
+    <span>&middot;</span>
+    <span>7 min read</span>
+  </div>
+  <p class="lead">A good bug report should tell a developer what happened, where it happened, and what evidence points to the cause. Vynix helps collect that context from the page, then lets you move the work into GitHub so Copilot or another coding agent has something concrete to act on.</p>
+  <figure class="ill-hero"><svg class="vx-ill" viewBox="0 0 640 360" role="img" aria-label="Clicking an element and leaving a note with Vynix" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto;aspect-ratio:16 / 9;display:block">
+  <defs>
+    <linearGradient id="vxcap-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6fdfa"/><stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="vxcap-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#008448"/><stop offset="1" stop-color="#15c47d"/>
+    </linearGradient>
+    <filter id="vxcap-s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="638" height="358" rx="22" fill="url(#vxcap-bg)" stroke="#d1fae5"/>
+  <style>
+    .vxcap-pulse{transform-box:fill-box;transform-origin:center;animation:vxcap-pulse 2.6s ease-in-out infinite}
+    @keyframes vxcap-pulse{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:1;transform:scale(1.06)}}
+    .vxcap-dash{stroke-dasharray:8 10;animation:vxcap-dash 1.4s linear infinite}
+    @keyframes vxcap-dash{to{stroke-dashoffset:-36}}
+    .vxcap-float{animation:vxcap-float 4s ease-in-out infinite}
+    @keyframes vxcap-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    .vxcap-in{opacity:0;animation:vxcap-in 6s ease-in-out infinite}
+    @keyframes vxcap-in{0%,8%{opacity:0;transform:translateY(8px)}18%,72%{opacity:1;transform:translateY(0)}88%,100%{opacity:0}}
+  </style>
+  <rect x="48" y="56" width="544" height="248" rx="14" fill="#ffffff" stroke="#e2e8f0" filter="url(#vxcap-s)"/>
+     <rect x="48" y="56" width="544" height="34" rx="14" fill="#f1f5f9"/>
+     <circle cx="70" cy="73" r="5" fill="#f87171"/><circle cx="88" cy="73" r="5" fill="#fbbf24"/><circle cx="106" cy="73" r="5" fill="#34d399"/>
+     <rect x="78" y="120" width="220" height="14" rx="7" fill="#e2e8f0"/>
+     <rect x="78" y="148" width="320" height="14" rx="7" fill="#eef2f7"/>
+     <rect x="78" y="200" width="150" height="40" rx="10" fill="url(#vxcap-g)"/>
+     <text x="153" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#fff">Buy now</text>
+     <rect x="76" y="198" width="154" height="44" rx="12" fill="none" stroke="#008448" stroke-width="2.5" class="vxcap-pulse"/>
+     <g class="vxcap-in">
+       <rect x="300" y="190" width="252" height="86" rx="12" fill="#052e1b" filter="url(#vxcap-s)"/>
+       <circle cx="320" cy="210" r="7" fill="#15c47d"/>
+       <rect x="336" y="204" width="120" height="9" rx="4" fill="#34d399"/>
+       <rect x="312" y="228" width="220" height="8" rx="4" fill="#1e5b43"/>
+       <rect x="312" y="246" width="180" height="8" rx="4" fill="#1e5b43"/>
+     </g>
+     <g>
+       <path d="M150 210 q -2 -34 22 -40" fill="none" stroke="#008448" stroke-width="2" stroke-dasharray="4 6"/>
+       <path class="vxcap-float" d="M470 120 l 14 26 -10 -2 -2 12 z" fill="#0f172a"/>
+     </g>
+</svg></figure><figure class="hero"><img src="/assets/shots/shot-github.png" alt="Vynix opening GitHub issues from a batch of notes and assigning Copilot" width="1080" height="1350" /><figcaption>Vynix opening GitHub issues from a batch of notes and assigning Copilot</figcaption></figure>
+  <div class="toc"><strong>On this page</strong><ol><li><a href="#s1-why-github-issues-are-the-hand">Why GitHub issues are the handoff point</a></li><li><a href="#s2-connect-vynix-to-the-right-git">Connect Vynix to the right GitHub repository</a></li><li><a href="#s3-capture-a-bug-with-enough-cont">Capture a bug with enough context for Copilot</a></li><li><a href="#s4-turn-the-capture-into-a-github">Turn the capture into a GitHub issue</a></li><li><a href="#s5-assign-the-issue-to-copilot-or">Assign the issue to Copilot or copy the prompt</a></li><li><a href="#s6-review-the-pull-request-like-a">Review the pull request like any other code change</a></li></ol></div>
+  <section id="s1-why-github-issues-are-the-hand"><h2>Why GitHub issues are the handoff point</h2><p>Copilot is useful when the task is clear. It is much less useful when the issue says only "button broken" or "checkout looks weird". The difference is not the AI model, it is the amount of context in the task. A GitHub issue is the natural place to put that context because it sits next to the code, labels, assignees, pull requests, and review history.</p><p>Vynix is built around that handoff. Instead of asking a tester, PM, designer, or support engineer to write a long technical report from memory, Vynix captures the page state at the moment someone clicks the problem. That includes the selected element, a screenshot, console and network context, and an AI diagnosis of the likely root cause. From there, you can copy a ready-to-build prompt or open a GitHub issue and assign it to a coding agent.</p><p>The goal is not to replace engineering judgment. The goal is to remove the slow, lossy part of bug reporting: screenshots in chat, missing URLs, vague reproduction steps, and follow-up questions that arrive hours later.</p></section>
+<section id="s2-connect-vynix-to-the-right-git"><h2>Connect Vynix to the right GitHub repository</h2><p>Before you hand work to Copilot, make sure Vynix is connected to the repository where the fix should happen. This matters because many website bugs are visible in one place but fixed in another. A broken pricing card might live in a marketing site repo, while a failed checkout request might belong in an app repo or an API repo.</p><p>When you authorize GitHub access, choose the smallest practical scope. If Vynix only needs to create issues in a specific repository, do not grant access to every repository in the organization unless your team has a reason for it. The exact permission screen depends on your GitHub setup, but the principle is simple: connect the repo that owns the work.</p><p>It also helps to agree on a few issue conventions before people start sending work to Copilot. A clean issue queue makes it easier for humans and agents to pick up tasks without guessing.</p><ul><li>Pick the repository that contains the code likely to change.</li><li>Confirm Vynix can open issues in that repository.</li><li>Use existing labels such as bug, frontend, backend, design QA, or regression.</li><li>If your team uses projects or milestones, decide whether new Vynix issues should be triaged first or assigned directly.</li><li>Check that Copilot coding agent assignment is enabled in your GitHub environment if you plan to assign issues to Copilot.</li></ul><figure><img src="/assets/shots/shot-github.png" alt="Vynix opening GitHub issues from a batch of notes and assigning Copilot" loading="lazy" width="1080" height="1350" /><figcaption>Vynix opening GitHub issues from a batch of notes and assigning Copilot</figcaption></figure></section>
+<section id="s3-capture-a-bug-with-enough-cont"><h2>Capture a bug with enough context for Copilot</h2><p>The quality of the GitHub issue starts with the capture. With the Vynix widget on the site, open the page where the problem occurs and click the element that is wrong. This could be a button, form field, menu item, card, modal, table row, or any visible part of the interface.</p><p>That click gives Vynix a concrete target. Instead of a report that says "the page is broken", the issue can point to the specific element and the exact page state. The screenshot shows what the reporter saw. Console context can reveal JavaScript errors, failed imports, hydration problems, or warnings that might matter. Network context can show failed requests, unexpected response codes, slow calls, or missing data.</p><p>For example, imagine a user profile page where the "Save changes" button does nothing. A plain issue might say: "Save button is not working on profile." A Vynix-backed issue can include the selected button, the screenshot, the console error from the click handler, and the failed PATCH request. Copilot now has a task that looks closer to engineering work: inspect the profile form submission path, verify why the PATCH request fails, and propose a code change.</p><ul><li>Click the exact UI element involved in the bug, not just a nearby container.</li><li>Capture the issue immediately after reproducing it, before refreshing or navigating away.</li><li>Add a short human note if the expected behavior is not obvious from the screenshot.</li><li>Include any important role, account state, browser condition, or feature flag context in the note if it affects reproduction.</li></ul></section>
+<section id="s4-turn-the-capture-into-a-github"><h2>Turn the capture into a GitHub issue</h2><p>After Vynix has captured the page context, create the GitHub issue from that report. The issue should be readable by a developer who has not seen the bug before. It should also be specific enough that Copilot can draft a useful plan or implementation without inventing the missing details.</p><p>A strong issue title names the failure and the surface area. "Profile save fails when PATCH /api/profile returns 400" is better than "Profile bug". The body should include the observed behavior, expected behavior, capture details, relevant console and network context, and the AI diagnosis as a starting point, not as a final answer.</p><p>Treat the AI diagnosis like a helpful first pass. It might point to a likely root cause, such as a missing prop, a stale selector, a rejected request, an unhandled null response, or a CSS rule that hides a component. A developer or agent still needs to verify it against the code.</p><ul><li>Keep the title action-oriented and specific.</li><li>Put reproduction steps near the top if the issue requires a sequence.</li><li>Separate evidence from guesses, so Copilot can reason from facts.</li><li>Leave the screenshot and captured element context in the issue for quick visual confirmation.</li><li>Do not remove console or network details just because they look noisy. They may contain the clue that points to the fix.</li></ul></section>
+<section id="s5-assign-the-issue-to-copilot-or"><h2>Assign the issue to Copilot or copy the prompt</h2><p>Once the GitHub issue exists, you have two common paths. If your GitHub setup supports assigning work to Copilot coding agent, assign the issue according to your team's normal workflow. Copilot can then use the issue as the task description and work against the repository context available to it.</p><p>If you are not using Copilot coding agent assignment, or if you want a developer to run the task inside their own editor, copy the ready-to-build prompt from Vynix instead. Paste it into the coding tool your team uses, then include the relevant repository, branch expectations, and any constraints that are not visible from the browser capture.</p><p>A good handoff prompt should be direct. It should say what to fix, where the bug appears, what evidence was captured, and how to verify the change. Avoid asking Copilot to "improve the page" when the actual task is to restore a missing click handler or handle an error state correctly.</p><ul><li>Use GitHub assignment when you want the work tracked as an issue from the start.</li><li>Use the copied prompt when a developer wants to guide Copilot manually in an editor or chat.</li><li>Add repository-specific instructions, such as test commands or component naming rules, if your team relies on them.</li><li>Ask for a small fix first. Large, vague issues are harder for Copilot and harder for reviewers.</li></ul></section>
+<section id="s6-review-the-pull-request-like-a"><h2>Review the pull request like any other code change</h2><p>Handing work to Copilot does not remove the need for review. It changes the starting point. Instead of a developer spending the first 20 minutes reconstructing a bug report, they can spend that time checking whether the proposed fix matches the captured evidence.</p><p>Use the Vynix capture as a review checklist. Does the pull request address the selected element? Does it explain the console or network failure? Does it include a test or verification step for the broken path? If the bug was visual, compare the updated UI to the screenshot. If the bug was caused by a failed request, confirm the error handling or request payload has actually changed.</p><p>The best workflow is boring in a good way: capture the issue, create the GitHub issue, assign or prompt Copilot, review the pull request, and verify the page again. Vynix gives the task the context it needs at the start, while GitHub keeps the implementation, discussion, and review in the place your team already uses.</p></section>
+  <figure><video controls preload="none" poster="/assets/shots/shot-github.png" width="1080" height="1350"><source src="https://vynix.in/marketing/github_handoff.mp4" type="video/mp4" /></video><figcaption>Hand off to GitHub: see Vynix in action</figcaption></figure>
+  <div class="callout"><strong>Key takeaways</strong><ul><li>Copilot works better when the GitHub issue includes concrete browser evidence, not just a vague bug summary.</li><li>Vynix captures the selected element, screenshot, console and network context, and an AI diagnosis so the issue starts with useful detail.</li><li>Use GitHub assignment for tracked agent work, or copy the Vynix prompt when a developer wants to guide Copilot manually.</li></ul></div>
+  <section class="faq"><h2>Frequently asked questions</h2><h3>Can Vynix automatically fix the bug in my repository?</h3><p>Vynix captures website context, provides an AI diagnosis of the likely root cause, and helps you create a GitHub issue or copy a ready-to-build prompt. The actual code change is handled through your development workflow, such as Copilot, another coding agent, or a developer.</p><h3>Do I need GitHub Copilot coding agent to use this workflow?</h3><p>No. If your GitHub setup supports assigning issues to Copilot, you can use that path. If not, you can still copy the Vynix prompt and use it with Copilot in an editor or another coding tool.</p><h3>What should I add manually after Vynix captures the issue?</h3><p>Add anything the browser cannot know: expected behavior, account role, feature flag state, business rule, test command, or release priority. Vynix captures the technical page context, but a short human note can make the task much clearer.</p></section>
+  <div class="callout">
+    <strong>Try Vynix on your own site</strong>
+    <p>Install the widget with one script tag, point at a bug, and hand the fix to your coding agent.</p>
+    <a class="cta" href="https://vynix.in">Get started free</a>
+  </div>
+  <h2>Keep reading</h2><ul><li><a href="/blog/what-a-feedback-layer-is-and-why-ai-teams-need-one/">What a feedback layer is, and why AI teams need one</a></li><li><a href="/blog/turn-a-visual-note-into-a-github-issue-in-one-step/">Turn a visual note into a GitHub issue in one step</a></li><li><a href="/compare/jam-vs-vynix/">Jam vs Vynix</a></li><li><a href="/compare/marker-io-vs-vynix/">Marker.io vs Vynix</a></li></ul>
+</article>
+</main>
+<footer class="site-footer"><div class="container">
+  <div>&copy; 2026 Vynix &middot; <a href="https://vynix.in">vynix.in</a></div>
+  <div>
+    <a href="/blog/">Blog</a> &middot;
+    <a href="/compare/">Compare</a> &middot;
+    <a href="/best/">Guides</a> &middot;
+    <a href="/glossary/">Glossary</a> &middot;
+    <a href="/kb/">Help</a> &middot;
+    <a href="/badge/">Badge</a> &middot;
+    <a href="https://github.com/vynix-in">GitHub</a> &middot;
+    <a href="https://vynix.in/privacy">Privacy</a>
+  </div>
+</div></footer>
+</body>
+</html>

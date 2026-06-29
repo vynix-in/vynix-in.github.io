@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#008448" />
+<link rel="icon" href="https://vynix.in/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="https://vynix.in/favicon.svg" />
+<link rel="apple-touch-icon" href="https://vynix.in/apple-touch-icon.png" />
+<title>How to Write Bug Reports AI Coding Agents Can Fix | Vynix</title>
+<meta name="description" content="Learn how to write bug reports with the evidence, context, and task shape an AI coding agent needs to fix the issue." />
+<meta name="keywords" content="context, handoff, agent, vynix, bug reporting, ai coding agents" />
+<link rel="canonical" href="https://www.vynix.in/resources/blog/how-to-write-bug-reports-ai-coding-agents-can-fix/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to Write Bug Reports AI Coding Agents Can Fix | Vynix" />
+<meta property="og:description" content="Learn how to write bug reports with the evidence, context, and task shape an AI coding agent needs to fix the issue." />
+<meta property="og:url" content="https://www.vynix.in/resources/blog/how-to-write-bug-reports-ai-coding-agents-can-fix/" />
+<meta property="og:image" content="https://vynix-in.github.io/assets/og/how-to-write-bug-reports-ai-coding-agents-can-fix.png" />
+<meta property="og:site_name" content="Vynix" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@usevynix" />
+<meta name="twitter:title" content="How to Write Bug Reports AI Coding Agents Can Fix | Vynix" />
+<meta name="twitter:description" content="Learn how to write bug reports with the evidence, context, and task shape an AI coding agent needs to fix the issue." />
+<meta name="twitter:image" content="https://vynix-in.github.io/assets/og/how-to-write-bug-reports-ai-coding-agents-can-fix.png" />
+<meta property="article:published_time" content="2026-06-29T03:25:31.970Z" />
+<meta property="article:modified_time" content="2026-06-29T03:25:31.970Z" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Write Bug Reports AI Coding Agents Can Fix",
+  "description": "Learn how to write bug reports with the evidence, context, and task shape an AI coding agent needs to fix the issue.",
+  "image": [
+    "https://vynix-in.github.io/assets/og/how-to-write-bug-reports-ai-coding-agents-can-fix.png"
+  ],
+  "datePublished": "2026-06-29T03:25:31.970Z",
+  "dateModified": "2026-06-29T03:25:31.970Z",
+  "author": {
+    "@type": "Organization",
+    "name": "The Vynix Team",
+    "url": "https://vynix.in"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vynix",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vynix.in/icon-512.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://vynix-in.github.io/blog/how-to-write-bug-reports-ai-coding-agents-can-fix/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://vynix.in"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://vynix-in.github.io/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Write Bug Reports AI Coding Agents Can Fix",
+      "item": "https://vynix-in.github.io/blog/how-to-write-bug-reports-ai-coding-agents-can-fix/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the most important part of a bug report for an AI coding agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most important part is a clear, reproducible failure: the user action, the actual result, and the expected result. Logs, screenshots, and diagnoses are useful, but the agent needs to know what behavior it must fix."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I include an AI diagnosis in the bug report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if you have one, but label it as a likely cause rather than a fact. Vynix can capture an AI diagnosis along with the element, screenshot, console context, and network context. The agent should use that diagnosis as a guide while still checking the evidence and code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should an AI-ready bug report be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It should be as short as possible while still including the failure, reproduction steps, expected behavior, captured evidence, and acceptance criteria. A concise report with complete context is better than a long report full of guesses."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Hand off through MCP",
+  "description": "Learn how to write bug reports with the evidence, context, and task shape an AI coding agent needs to fix the issue.",
+  "thumbnailUrl": [
+    "https://vynix-in.github.io/assets/shots/shot-mcp.png"
+  ],
+  "contentUrl": "https://vynix.in/marketing/mcp_handoff.mp4",
+  "uploadDate": "2026-06-29T03:25:31.970Z"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vynix",
+  "url": "https://vynix.in",
+  "logo": "https://vynix.in/icon-512.png",
+  "sameAs": [
+    "https://github.com/vynix-in",
+    "https://twitter.com/usevynix"
+  ]
+}
+</script>
+<style>
+:root{--green:#008448;--green-2:#06a463;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--bg:#ffffff;--soft:#f8fafc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+img,video{max-width:100%;height:auto;border-radius:12px}
+.container{max-width:880px;margin:0 auto;padding:0 20px}
+.site-header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);z-index:10}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;color:var(--ink);font-size:1.15rem}
+.brand .vx-logo{display:block}
+.brand-name{letter-spacing:-.01em}
+.brand .mark{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--green),var(--green-2));position:relative;display:inline-block}
+.brand .mark::after{content:"";position:absolute;inset:7px 8px;border-left:3px solid #fff;border-bottom:3px solid #fff;transform:rotate(-45deg)}
+nav.main a{color:var(--muted);font-size:.95rem;margin-left:18px;font-weight:500}
+nav.main a:hover{color:var(--green)}
+.cta{display:inline-block;background:var(--green);color:#fff!important;padding:9px 16px;border-radius:9px;font-weight:600;text-decoration:none!important}
+.cta:hover{background:var(--green-2)}
+.breadcrumbs{font-size:.85rem;color:var(--muted);padding:16px 0}
+.breadcrumbs a{color:var(--muted)}
+article{padding:8px 0 48px}
+article h1{font-size:2.3rem;line-height:1.15;margin:.2em 0 .3em}
+article h2{font-size:1.5rem;margin:1.6em 0 .5em}
+article h3{font-size:1.2rem;margin:1.4em 0 .4em}
+.lead{font-size:1.2rem;color:var(--muted)}
+.meta-row{display:flex;gap:14px;align-items:center;color:var(--muted);font-size:.9rem;margin:10px 0 22px;flex-wrap:wrap}
+.hero{margin:18px 0 26px;border:1px solid var(--line)}
+figure{margin:24px 0}
+figure img,figure video{border:1px solid var(--line);width:100%}
+figcaption{color:var(--muted);font-size:.85rem;margin-top:8px;text-align:center}
+.ill-hero{margin:18px 0 26px}
+.ill-hero svg{border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:.96rem}
+th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-weight:600}
+td.yes{color:var(--green);font-weight:600}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:24px 0}
+.toc strong{display:block;margin-bottom:8px;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.toc ol{margin:0;padding-left:20px}
+.faq h3{font-size:1.08rem;margin-top:1.2em}
+.callout{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:18px 20px;margin:26px 0}
+.callout a.cta{margin-top:8px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:24px 0}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:box-shadow .15s}
+.card:hover{box-shadow:0 8px 24px rgba(15,23,42,.08)}
+.card img{border-radius:0;display:block;aspect-ratio:16/9;object-fit:cover;width:100%}
+.card .body{padding:14px 16px}
+.card h3{margin:.2em 0;font-size:1.05rem}
+.card p{color:var(--muted);font-size:.92rem;margin:.3em 0 0}
+.tag{display:inline-block;font-size:.72rem;color:var(--green);background:#ecfdf5;border:1px solid #bbf7d0;border-radius:999px;padding:2px 9px;margin-right:6px}
+.site-footer{border-top:1px solid var(--line);background:var(--soft);margin-top:40px}
+.site-footer .container{padding:32px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;color:var(--muted);font-size:.9rem}
+.site-footer a{color:var(--muted)}
+@media(max-width:640px){article h1{font-size:1.8rem}nav.main a{margin-left:12px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container">
+  <a class="brand" href="https://vynix.in"><svg class="vx-logo" viewBox="0 0 1024 1024" width="28" height="28" fill="none" aria-hidden="true"><g transform="translate(0,1024) scale(0.1,-0.1)" fill="#008448"><path d="M30 8675 c0 -2 600 -532 1333 -1177 732 -645 1878 -1653 2544 -2240 l1213 -1068 1087 958 c599 526 1744 1535 2546 2240 801 706 1457 1285 1457 1288 0 2 -17 -6 -37 -19 -21 -13 -1166 -713 -2546 -1555 l-2507 -1532 -2388 1458 c-1313 803 -2458 1502 -2544 1555 -87 53 -158 95 -158 92z M1745 8503 c17 -11 783 -489 1702 -1061 l1673 -1042 1702 1061 c937 584 1694 1059 1683 1057 -11 -3 -777 -249 -1703 -548 l-1682 -543 -1683 543 c-1829 590 -1735 561 -1692 533z M1087 6789 c3048 -4001 4027 -5284 4033 -5284 9 0 4169 5458 4165 5463 -2 2 -295 -252 -652 -565 -356 -313 -1288 -1130 -2071 -1816 -783 -687 -1429 -1250 -1436 -1253 -8 -3 -239 192 -547 463 -1857 1629 -3606 3160 -3618 3168 -8 4 49 -74 126 -176z"/></g></svg><span class="brand-name">Vynix</span></a>
+  <nav class="main">
+    <a href="https://vynix.in">Product</a><a href="/blog/">Blog</a><a href="/compare/">Compare</a><a href="/best/">Guides</a><a href="/for/">Use cases</a><a href="/kb/">Help</a>
+    <a class="cta" href="https://vynix.in">Try free</a>
+  </nav>
+</div></header>
+<main class="container">
+<div class="breadcrumbs container"><a href="https://vynix.in">Home</a> / <a href="/blog/">Blog</a> / <span>How to Write Bug Reports AI Coding Agents Can Fix</span></div>
+<article>
+  <h1>How to Write Bug Reports AI Coding Agents Can Fix</h1>
+  <div class="meta-row">
+    <span>By the Vynix Team</span>
+    <span>&middot;</span>
+    <time datetime="2026-06-29T03:25:31.970Z">29 June 2026</time>
+    <span>&middot;</span>
+    <span>7 min read</span>
+  </div>
+  <p class="lead">AI coding agents can handle a surprising amount of implementation work, but they still need a clear target. A vague bug report asks the agent to guess, while a good report gives it the failure, the evidence, and the expected change in one place.</p>
+  <figure class="ill-hero"><svg class="vx-ill" viewBox="0 0 640 360" role="img" aria-label="Clicking an element and leaving a note with Vynix" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto;aspect-ratio:16 / 9;display:block">
+  <defs>
+    <linearGradient id="vxcap-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6fdfa"/><stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="vxcap-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#008448"/><stop offset="1" stop-color="#15c47d"/>
+    </linearGradient>
+    <filter id="vxcap-s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="638" height="358" rx="22" fill="url(#vxcap-bg)" stroke="#d1fae5"/>
+  <style>
+    .vxcap-pulse{transform-box:fill-box;transform-origin:center;animation:vxcap-pulse 2.6s ease-in-out infinite}
+    @keyframes vxcap-pulse{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:1;transform:scale(1.06)}}
+    .vxcap-dash{stroke-dasharray:8 10;animation:vxcap-dash 1.4s linear infinite}
+    @keyframes vxcap-dash{to{stroke-dashoffset:-36}}
+    .vxcap-float{animation:vxcap-float 4s ease-in-out infinite}
+    @keyframes vxcap-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    .vxcap-in{opacity:0;animation:vxcap-in 6s ease-in-out infinite}
+    @keyframes vxcap-in{0%,8%{opacity:0;transform:translateY(8px)}18%,72%{opacity:1;transform:translateY(0)}88%,100%{opacity:0}}
+  </style>
+  <rect x="48" y="56" width="544" height="248" rx="14" fill="#ffffff" stroke="#e2e8f0" filter="url(#vxcap-s)"/>
+     <rect x="48" y="56" width="544" height="34" rx="14" fill="#f1f5f9"/>
+     <circle cx="70" cy="73" r="5" fill="#f87171"/><circle cx="88" cy="73" r="5" fill="#fbbf24"/><circle cx="106" cy="73" r="5" fill="#34d399"/>
+     <rect x="78" y="120" width="220" height="14" rx="7" fill="#e2e8f0"/>
+     <rect x="78" y="148" width="320" height="14" rx="7" fill="#eef2f7"/>
+     <rect x="78" y="200" width="150" height="40" rx="10" fill="url(#vxcap-g)"/>
+     <text x="153" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#fff">Buy now</text>
+     <rect x="76" y="198" width="154" height="44" rx="12" fill="none" stroke="#008448" stroke-width="2.5" class="vxcap-pulse"/>
+     <g class="vxcap-in">
+       <rect x="300" y="190" width="252" height="86" rx="12" fill="#052e1b" filter="url(#vxcap-s)"/>
+       <circle cx="320" cy="210" r="7" fill="#15c47d"/>
+       <rect x="336" y="204" width="120" height="9" rx="4" fill="#34d399"/>
+       <rect x="312" y="228" width="220" height="8" rx="4" fill="#1e5b43"/>
+       <rect x="312" y="246" width="180" height="8" rx="4" fill="#1e5b43"/>
+     </g>
+     <g>
+       <path d="M150 210 q -2 -34 22 -40" fill="none" stroke="#008448" stroke-width="2" stroke-dasharray="4 6"/>
+       <path class="vxcap-float" d="M470 120 l 14 26 -10 -2 -2 12 z" fill="#0f172a"/>
+     </g>
+</svg></figure><figure class="hero"><img src="/assets/shots/shot-github.png" alt="Vynix opening GitHub issues from a batch of notes and assigning Copilot" width="1080" height="1350" /><figcaption>Vynix opening GitHub issues from a batch of notes and assigning Copilot</figcaption></figure>
+  <div class="toc"><strong>On this page</strong><ol><li><a href="#s1-why-ai-agents-need-better-bug-">Why AI agents need better bug reports</a></li><li><a href="#s2-start-with-the-visible-failure">Start with the visible failure</a></li><li><a href="#s3-attach-the-context-an-agent-ca">Attach the context an agent cannot see</a></li><li><a href="#s4-write-reproduction-steps-like-">Write reproduction steps like a test case</a></li><li><a href="#s5-turn-the-report-into-a-build-r">Turn the report into a build-ready prompt</a></li><li><a href="#s6-use-github-issues-as-agent-wor">Use GitHub issues as agent work orders</a></li><li><a href="#s7-common-mistakes-that-make-agen">Common mistakes that make agents guess</a></li></ol></div>
+  <section id="s1-why-ai-agents-need-better-bug-"><h2>Why AI agents need better bug reports</h2><p>A human developer can often fill in missing details by asking the reporter, opening the app, checking logs, and using product memory. An AI coding agent has less context unless you give it that context directly. If the report says, 'Checkout is broken', the agent has to infer the page, the user action, the expected behavior, the actual behavior, and which part of the code might be involved.</p><p>That does not mean bug reports need to be long. They need to be specific. The best report for an agent is closer to a small work order than a complaint. It explains what failed, where it failed, how to see it, what evidence was captured, and what outcome should exist after the fix.</p></section>
+<section id="s2-start-with-the-visible-failure"><h2>Start with the visible failure</h2><p>Begin with what the user can see or do, not with your guess about the code. A report that says, 'Cart state is not syncing' may be true, but it is less useful than, 'After changing quantity from 1 to 2 on the cart page, the subtotal stays at the old amount until refresh.' The second version gives the agent a concrete behavior to reproduce and verify.</p><p>A strong opening sentence includes the page or feature, the action, the actual result, and the expected result. This gives the agent a test target before it reads any logs or code. It also reduces the risk that the agent fixes a nearby issue but misses the actual user-facing failure.</p><ul><li>Weak: The button does not work.</li><li>Better: On the account settings page, clicking Save after changing the display name shows no confirmation and the new name is not saved.</li><li>Weak: Search is broken on mobile.</li><li>Better: On iPhone viewport width, tapping the search icon opens the input, but typing a query and pressing Enter does not navigate to results.</li></ul><figure><img src="/assets/shots/shot-github.png" alt="Vynix opening GitHub issues from a batch of notes and assigning Copilot" loading="lazy" width="1080" height="1350" /><figcaption>Vynix opening GitHub issues from a batch of notes and assigning Copilot</figcaption></figure></section>
+<section id="s3-attach-the-context-an-agent-ca"><h2>Attach the context an agent cannot see</h2><p>Most bugs are not explained by the visible UI alone. A blank panel could be a rendering problem, a failed API request, a permission error, or bad data. An agent needs the surrounding signals that a developer would normally collect from browser tools.</p><p>This is where a tool like Vynix is useful. You drop a lightweight widget on a site, click the thing that is wrong, and Vynix captures the selected element, a screenshot, console context, network context, and an AI diagnosis of the likely root cause. That package gives the agent more than a description. It gives it clues about the DOM, the visual state, and the runtime errors near the failure.</p><p>The important part is not the volume of data. It is that the evidence is attached to the exact UI problem. A screenshot of the whole page is helpful, but a screenshot plus the selected element and nearby console or network failure is much better.</p><ul><li>Element context helps identify the component, selector, label, and local UI state.</li><li>A screenshot shows layout, copy, hidden panels, disabled states, and visual regressions.</li><li>Console context can expose exceptions, hydration warnings, missing variables, or failed event handlers.</li><li>Network context can show failed requests, wrong status codes, empty responses, or slow dependencies.</li><li>An AI diagnosis should be treated as a starting point, not proof. Include it, but keep the observed failure as the source of truth.</li></ul></section>
+<section id="s4-write-reproduction-steps-like-"><h2>Write reproduction steps like a test case</h2><p>Reproduction steps should be short, ordered, and written so someone else can follow them without asking you what you meant. If a login state, role, feature flag, or sample record matters, include it. If the bug only appears after a refresh or only on a certain viewport, say that.</p><p>Good steps also help the agent create or update tests. When the report says exactly which action causes the failure, the agent can look for the relevant component, handler, route, or API call. When the report says how to confirm the fix, the agent has a stopping condition.</p><ul><li>Use numbered steps, not a paragraph full of mixed actions.</li><li>Name the page, route, or feature area.</li><li>State the required account type, role, data record, or browser condition if it matters.</li><li>Include the last action before the bug appears.</li><li>Add an expected result and an actual result after the steps.</li><li>Mention whether the issue is always reproducible or intermittent.</li></ul></section>
+<section id="s5-turn-the-report-into-a-build-r"><h2>Turn the report into a build-ready prompt</h2><p>A coding agent needs a task, not just a ticket. After the evidence is captured, translate it into a prompt that tells the agent what to inspect, what to change, and how to verify the result. Vynix supports this flow by letting you copy a ready-to-build prompt from the captured website context.</p><p>A useful prompt should separate facts from assumptions. Facts are the observable failure, captured screenshot, selected element, console messages, network requests, and reproduction steps. Assumptions are your best guess about why it happens. If you mix them together, the agent may overfit to your guess and ignore the evidence.</p><p>The prompt should also define the boundary of the work. If the goal is to fix quantity updates in the cart, say that. Do not also ask the agent to redesign the checkout, refactor state management, and clean up unrelated warnings. Narrow tasks are easier to review and less likely to produce risky changes.</p><ul><li>Include: Fix the issue where [action] causes [actual result] instead of [expected result].</li><li>Include: Use the attached screenshot, selected element, console context, and network context as evidence.</li><li>Include: Check related component, handler, route, and API call paths before changing code.</li><li>Include: Add or update a test if the codebase has an existing pattern for this behavior.</li><li>Include: Verify by following these reproduction steps after the fix.</li><li>Avoid: Rewrite the whole page unless that is truly the task.</li></ul></section>
+<section id="s6-use-github-issues-as-agent-wor"><h2>Use GitHub issues as agent work orders</h2><p>Once the report is shaped, put it where the work will happen. Vynix can open a GitHub issue from the captured context and assign it to a coding agent. That matters because the issue becomes the durable work order, review thread, and audit trail for the fix.</p><p>A good GitHub issue for an agent should have a clear title, a short summary, reproduction steps, captured evidence, expected behavior, and acceptance criteria. Acceptance criteria are especially important because they tell reviewers and agents when the work is done. For example, 'Changing cart quantity updates the subtotal without refresh' is better than 'Cart works.'</p><p>Keep the issue focused on one bug. If the same screen has three separate problems, create three separate issues unless they clearly share the same cause. Agents tend to perform better when each task has one user-facing failure and one definition of done.</p><ul><li>Title: Cart subtotal does not update after quantity change.</li><li>Summary: On the cart page, changing quantity updates the line item but not the subtotal until refresh.</li><li>Evidence: Attached Vynix capture with screenshot, selected element, console context, and network context.</li><li>Steps: List the exact path from opening the page to seeing the failure.</li><li>Acceptance: Subtotal updates immediately after quantity change and existing cart behavior still works.</li></ul></section>
+<section id="s7-common-mistakes-that-make-agen"><h2>Common mistakes that make agents guess</h2><p>The most common mistake is reporting feelings instead of facts. 'The page feels broken' may be true, but it gives the agent nothing to test. Replace it with a user action and a visible result. Another common mistake is leaving out the expected behavior because it seems obvious. It is not always obvious to an agent, especially in a large product with inconsistent patterns.</p><p>Another problem is attaching evidence without explaining why it matters. A console error can be unrelated noise. A failed network request may be the key clue. The report should point to the evidence that appears connected to the failure, while still including the raw context when possible.</p><p>Finally, avoid asking the agent to fix symptoms across the whole app from one report. If a bug appears in one component, start there. If investigation shows a shared utility is wrong, the agent can make a broader fix and explain it in the pull request. The initial report should still be grounded in one reproducible failure.</p></section>
+  <figure><video controls preload="none" poster="/assets/shots/shot-mcp.png" width="1080" height="1350"><source src="https://vynix.in/marketing/mcp_handoff.mp4" type="video/mp4" /></video><figcaption>Hand off through MCP: see Vynix in action</figcaption></figure>
+  <div class="callout"><strong>Key takeaways</strong><ul><li>Write bug reports as small work orders with one clear failure, one expected result, and one definition of done.</li><li>Give the agent browser context it cannot infer, such as the selected element, screenshot, console output, and network activity.</li><li>Use tools like Vynix to capture website context, copy a ready-to-build prompt, or open a GitHub issue that a coding agent can act on.</li></ul></div>
+  <section class="faq"><h2>Frequently asked questions</h2><h3>What is the most important part of a bug report for an AI coding agent?</h3><p>The most important part is a clear, reproducible failure: the user action, the actual result, and the expected result. Logs, screenshots, and diagnoses are useful, but the agent needs to know what behavior it must fix.</p><h3>Should I include an AI diagnosis in the bug report?</h3><p>Yes, if you have one, but label it as a likely cause rather than a fact. Vynix can capture an AI diagnosis along with the element, screenshot, console context, and network context. The agent should use that diagnosis as a guide while still checking the evidence and code.</p><h3>How long should an AI-ready bug report be?</h3><p>It should be as short as possible while still including the failure, reproduction steps, expected behavior, captured evidence, and acceptance criteria. A concise report with complete context is better than a long report full of guesses.</p></section>
+  <div class="callout">
+    <strong>Try Vynix on your own site</strong>
+    <p>Install the widget with one script tag, point at a bug, and hand the fix to your coding agent.</p>
+    <a class="cta" href="https://vynix.in">Get started free</a>
+  </div>
+  <h2>Keep reading</h2><ul><li><a href="/blog/what-a-feedback-layer-is-and-why-ai-teams-need-one/">What a feedback layer is, and why AI teams need one</a></li><li><a href="/blog/turn-a-visual-note-into-a-github-issue-in-one-step/">Turn a visual note into a GitHub issue in one step</a></li><li><a href="/compare/jam-vs-vynix/">Jam vs Vynix</a></li><li><a href="/compare/marker-io-vs-vynix/">Marker.io vs Vynix</a></li></ul>
+</article>
+</main>
+<footer class="site-footer"><div class="container">
+  <div>&copy; 2026 Vynix &middot; <a href="https://vynix.in">vynix.in</a></div>
+  <div>
+    <a href="/blog/">Blog</a> &middot;
+    <a href="/compare/">Compare</a> &middot;
+    <a href="/best/">Guides</a> &middot;
+    <a href="/glossary/">Glossary</a> &middot;
+    <a href="/kb/">Help</a> &middot;
+    <a href="/badge/">Badge</a> &middot;
+    <a href="https://github.com/vynix-in">GitHub</a> &middot;
+    <a href="https://vynix.in/privacy">Privacy</a>
+  </div>
+</div></footer>
+</body>
+</html>

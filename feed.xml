@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Vynix Blog</title>
+    <link>https://vynix-in.github.io/blog/</link>
+    <description>Practical guides on bug reporting, developer context, and shipping with AI coding agents.</description>
+    <language>en</language>
+    <item>
+      <title>What a feedback layer is, and why AI teams need one</title>
+      <link>https://vynix-in.github.io/blog/what-a-feedback-layer-is-and-why-ai-teams-need-one/</link>
+      <guid>https://vynix-in.github.io/blog/what-a-feedback-layer-is-and-why-ai-teams-need-one/</guid>
+      <description>A practical guide to feedback layers, why AI coding agents need better context, and how Vynix turns website issues into build-ready tasks.</description>
+      <pubDate>Mon, 29 Jun 2026 03:27:04 GMT</pubDate>
+    </item>
+    <item>
+      <title>Turn a visual note into a GitHub issue in one step</title>
+      <link>https://vynix-in.github.io/blog/turn-a-visual-note-into-a-github-issue-in-one-step/</link>
+      <guid>https://vynix-in.github.io/blog/turn-a-visual-note-into-a-github-issue-in-one-step/</guid>
+      <description>Use Vynix to turn a clicked website problem into a GitHub issue with screenshot, element details, logs, and AI diagnosis.</description>
+      <pubDate>Mon, 29 Jun 2026 03:27:45 GMT</pubDate>
+    </item>
+    <item>
+      <title>How Vynix Captures Console and Network Detail</title>
+      <link>https://vynix-in.github.io/blog/how-vynix-captures-console-and-network-detail/</link>
+      <guid>https://vynix-in.github.io/blog/how-vynix-captures-console-and-network-detail/</guid>
+      <description>See how Vynix collects console logs, network context, screenshots, and element detail so developers can debug reported site issues faster.</description>
+      <pubDate>Mon, 29 Jun 2026 03:28:30 GMT</pubDate>
+    </item>
+    <item>
+      <title>Using the Vynix MCP server with your AI agent</title>
+      <link>https://vynix-in.github.io/blog/using-the-vynix-mcp-server-with-your-ai-agent/</link>
+      <guid>https://vynix-in.github.io/blog/using-the-vynix-mcp-server-with-your-ai-agent/</guid>
+      <description>Connect Vynix context to an AI coding agent so bugs include the element, screenshot, console, network data, and a clearer fix path.</description>
+      <pubDate>Mon, 29 Jun 2026 03:29:13 GMT</pubDate>
+    </item>
+    <item>
+      <title>Collecting website feedback from clients and teammates</title>
+      <link>https://vynix-in.github.io/blog/collecting-website-feedback-from-clients-and-teammates/</link>
+      <guid>https://vynix-in.github.io/blog/collecting-website-feedback-from-clients-and-teammates/</guid>
+      <description>A practical guide to collecting website feedback with enough context for developers to understand, reproduce, and fix issues faster.</description>
+      <pubDate>Mon, 29 Jun 2026 03:30:45 GMT</pubDate>
+    </item>
+    <item>
+      <title>How Vynix Works, From a Click to a Fix</title>
+      <link>https://vynix-in.github.io/blog/how-vynix-works-from-a-click-to-a-fix/</link>
+      <guid>https://vynix-in.github.io/blog/how-vynix-works-from-a-click-to-a-fix/</guid>
+      <description>See how Vynix turns a page click into developer context, an AI root-cause guess, and a ready prompt or GitHub issue.</description>
+      <pubDate>Mon, 29 Jun 2026 03:31:34 GMT</pubDate>
+    </item>
+    <item>
+      <title>Point and click feedback on any web page</title>
+      <link>https://vynix-in.github.io/blog/point-and-click-feedback-on-any-web-page/</link>
+      <guid>https://vynix-in.github.io/blog/point-and-click-feedback-on-any-web-page/</guid>
+      <description>Capture UI bugs with a click, including screenshots, element data, console and network context, and a ready-to-build prompt.</description>
+      <pubDate>Mon, 29 Jun 2026 03:33:13 GMT</pubDate>
+    </item>
+    <item>
+      <title>Review rounds: turn notes into a short fix list</title>
+      <link>https://vynix-in.github.io/blog/review-rounds-turn-notes-into-a-short-fix-list/</link>
+      <guid>https://vynix-in.github.io/blog/review-rounds-turn-notes-into-a-short-fix-list/</guid>
+      <description>Learn how to turn messy website review notes into clear, buildable fixes with better triage, context, and Vynix annotations.</description>
+      <pubDate>Mon, 29 Jun 2026 03:34:38 GMT</pubDate>
+    </item>
+    <item>
+      <title>Region and element screenshots in Vynix</title>
+      <link>https://vynix-in.github.io/blog/region-and-element-screenshots-in-vynix/</link>
+      <guid>https://vynix-in.github.io/blog/region-and-element-screenshots-in-vynix/</guid>
+      <description>Learn how Vynix uses region and element screenshots to turn visual bug reports into focused developer context, prompts, and GitHub issues.</description>
+      <pubDate>Mon, 29 Jun 2026 03:35:24 GMT</pubDate>
+    </item>
+    <item>
+      <title>Projects, roles and sharing in Vynix</title>
+      <link>https://vynix-in.github.io/blog/projects-roles-and-sharing-in-vynix/</link>
+      <guid>https://vynix-in.github.io/blog/projects-roles-and-sharing-in-vynix/</guid>
+      <description>How to organize Vynix projects, set practical roles, and share annotated website context without losing debugging details.</description>
+      <pubDate>Mon, 29 Jun 2026 03:36:14 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to install Vynix on any website</title>
+      <link>https://vynix-in.github.io/blog/how-to-install-vynix-on-any-website/</link>
+      <guid>https://vynix-in.github.io/blog/how-to-install-vynix-on-any-website/</guid>
+      <description>Install Vynix with a lightweight widget, verify capture, control where it loads, and turn visual bugs into actionable context.</description>
+      <pubDate>Mon, 29 Jun 2026 03:37:44 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to connect GitHub and hand work to Copilot</title>
+      <link>https://vynix-in.github.io/blog/how-to-connect-github-and-hand-work-to-copilot/</link>
+      <guid>https://vynix-in.github.io/blog/how-to-connect-github-and-hand-work-to-copilot/</guid>
+      <description>Turn website bugs into GitHub issues Copilot can act on, with screenshots, element context, console logs, and network clues from Vynix.</description>
+      <pubDate>Mon, 29 Jun 2026 03:38:27 GMT</pubDate>
+    </item>
+    <item>
+      <title>Vynix plans, and how to pick the right one</title>
+      <link>https://vynix-in.github.io/blog/vynix-plans-and-how-to-pick-the-right-one/</link>
+      <guid>https://vynix-in.github.io/blog/vynix-plans-and-how-to-pick-the-right-one/</guid>
+      <description>Compare Vynix plan types at a high level and choose based on bug volume, team workflow, and AI-assisted development needs.</description>
+      <pubDate>Mon, 29 Jun 2026 03:39:20 GMT</pubDate>
+    </item>
+    <item>
+      <title>What we are building next at Vynix</title>
+      <link>https://vynix-in.github.io/blog/what-we-are-building-next-at-vynix/</link>
+      <guid>https://vynix-in.github.io/blog/what-we-are-building-next-at-vynix/</guid>
+      <description>A practical look at where Vynix is headed: deeper agent workflows, more integrations, and richer context for website feedback.</description>
+      <pubDate>Mon, 29 Jun 2026 03:39:59 GMT</pubDate>
+    </item>
+    <item>
+      <title>The context an AI agent needs to fix a front-end bug</title>
+      <link>https://vynix-in.github.io/blog/the-context-an-ai-agent-needs-to-fix-a-front-end-bug/</link>
+      <guid>https://vynix-in.github.io/blog/the-context-an-ai-agent-needs-to-fix-a-front-end-bug/</guid>
+      <description>Learn what to send an AI coding agent for front-end bugs: element details, screenshots, console logs, network traces, and clear repro steps.</description>
+      <pubDate>Mon, 29 Jun 2026 03:26:18 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to Write Bug Reports AI Coding Agents Can Fix</title>
+      <link>https://vynix-in.github.io/blog/how-to-write-bug-reports-ai-coding-agents-can-fix/</link>
+      <guid>https://vynix-in.github.io/blog/how-to-write-bug-reports-ai-coding-agents-can-fix/</guid>
+      <description>Learn how to write bug reports with the evidence, context, and task shape an AI coding agent needs to fix the issue.</description>
+      <pubDate>Mon, 29 Jun 2026 03:25:31 GMT</pubDate>
+    </item>
+    <item>
+      <title>From a reported bug to a merged fix</title>
+      <link>https://vynix-in.github.io/blog/from-a-reported-bug-to-a-merged-fix/</link>
+      <guid>https://vynix-in.github.io/blog/from-a-reported-bug-to-a-merged-fix/</guid>
+      <description>Turn a vague website bug report into a clear GitHub issue, agent-ready prompt, tested pull request, and merged fix with Vynix.</description>
+      <pubDate>Mon, 29 Jun 2026 03:29:55 GMT</pubDate>
+    </item>
+    <item>
+      <title>Who Vynix Is For and What It Solves</title>
+      <link>https://vynix-in.github.io/blog/who-vynix-is-for-and-what-it-solves/</link>
+      <guid>https://vynix-in.github.io/blog/who-vynix-is-for-and-what-it-solves/</guid>
+      <description>See who Vynix helps and how it turns vague website feedback into actionable developer context.</description>
+      <pubDate>Mon, 29 Jun 2026 03:32:23 GMT</pubDate>
+    </item>
+    <item>
+      <title>Reading the Vynix AI Diagnosis and Files It Finds</title>
+      <link>https://vynix-in.github.io/blog/reading-the-vynix-ai-diagnosis-and-files-it-finds/</link>
+      <guid>https://vynix-in.github.io/blog/reading-the-vynix-ai-diagnosis-and-files-it-finds/</guid>
+      <description>Learn how to turn a Vynix AI diagnosis, captured context, and suggested files into a clear fix plan or coding-agent prompt.</description>
+      <pubDate>Mon, 29 Jun 2026 03:33:54 GMT</pubDate>
+    </item>
+    <item>
+      <title>How Vynix cuts the cost of AI coding agents</title>
+      <link>https://vynix-in.github.io/blog/how-vynix-cuts-the-cost-of-ai-coding-agents/</link>
+      <guid>https://vynix-in.github.io/blog/how-vynix-cuts-the-cost-of-ai-coding-agents/</guid>
+      <description>Vynix gives AI coding agents page, element, console, and network context up front, reducing wasted runs and engineer handoff time.</description>
+      <pubDate>Mon, 29 Jun 2026 03:36:52 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
